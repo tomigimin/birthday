@@ -1,0 +1,59 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Cinta</title>
+  <style>
+    body {
+      background: #fde2e4;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Masukkan Password Cinta 💖</h2>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Masuk</button>
+  </div>
+  <script>
+    function checkPassword() {
+      const correct = "ultah2024"; // Ganti sesuai password kamu
+      const input = document.getElementById("password").value;
+      if (input === correct) {
+        window.location.href = "index.html";
+      } else {
+        alert("Password salah, coba lagi yaa");
+      }
+    }
+  </script>
+</body>
+</html>
